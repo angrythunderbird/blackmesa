@@ -1,16 +1,20 @@
 body { font-family: 'Lato', sans-serif; font-weight: 400; font-size: 16px; }
 
+.wrapper { width: 100%; max-width: 1170px; margin: 0 auto; }
+
 .center { text-align: center; }
 
 .info-item, .info-link { color: rgba(255, 255, 255, 0.3); font-size: 14px; }
 
 .nav-link { color: #444444; }
 
-.title p { color: #30a3f0; text-transform: capitalize; font-size: 18px; }
+.title p { margin-top: 29px; font-family: 'Raleway', sans-serif; color: #30a3f0; text-transform: capitalize; font-size: 18px; }
 
-.title h1 { color: #ffffff; text-transform: uppercase; font-size: 45px; }
+.title h1 { max-width: 720px; margin: 0 auto 32px; font-family: 'Raleway', sans-serif; color: #ffffff; text-transform: uppercase; font-size: 45px; font-weight: 800; }
 
-.btn { color: #30a3f0; text-transform: uppercase; font-size: 14px; }
+.vertstripe { background-color: #2b88c7; width: 1px; height: 100px; margin: 0 auto; }
+
+.btn { font-weight: 700; color: #30a3f0; text-transform: uppercase; font-size: 14px; text-decoration: none; padding: 20px 42px; border: 1px solid #30a3f0; border-radius: 5px; }
 
 .box_item h2 { font-family: 'Raleway', sans-serif; font-weight: 600; font-size: 20px; }
 

@@ -5,83 +5,88 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
    <title>Simple landing</title>
-   <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Raleway:400,600,800&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Raleway:400,600,700,800&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="/normalize.css">
    <link rel="stylesheet" href="/src/css/style.min.css"> 
-
 </head>
+
 <body>
    <header>
-      <div>
-         <ul class="info">
-            <li class="info-item">
-               Have any questions?
-            </li>
-            <li class="info-item">
-               <a class="info-link" href="mailto:support@example.com">support@example.com</a>
-            </li>
-            <li class="info-item">
-               <a class="info-link" href="tel:+1 814 251 152">+1 814 251 152</a>
-            </li>
-         </ul>
-         <ul class="info">
-            <li class="info-item">
-               <a class="info-link" href="#">Login</a>
-            </li>
-            <li class="info-item">
-               <a class="info-link" href="#">Register</a>
-            </li>
-         </ul>
-      </div>
-      
-      <div>
-         <img src="/images/logo.svg" alt="Logo">
-         <nav>
-            <ul class="nav">
-               <li class="nav-item">
-                  <a href="#" class="nav-link">Home</a>
+      <div class="wrapper">
+         <div>
+            <ul class="info">
+               <li class="info-item">
+                  Have any questions?
                </li>
-               <li class="nav-item">
-                  <a href="#" class="nav-link">Page</a>
-               </li class="nav-item">
-               <li>
-                  <a href="#" class="nav-link">Portfolio</a>
+               <li class="info-item">
+                  <a class="info-link" href="mailto:support@example.com">support@example.com</a>
                </li>
-               <li class="nav-item">
-                  <a href="#" class="nav-link">Blog</a>
-               </li>
-               <li class="nav-item">
-                  <a href="#" class="nav-link">Shop</a>
-               </li>
-               <li class="nav-item">
-                  <a href="#" class="nav-link">Shortcodes</a>
-               </li>
-               <li class="nav-item">
-                  <a href="#" class="nav-link">Features</a>
-               </li>
-               <li class="nav-item">
-                  <a href="#" class="nav-link">Contact</a>
-               </li>
-               <li>
-                  <button></button>
-               </li>
-               <li>
-                  <button></button>
+               <li class="info-item">
+                  <a class="info-link" href="tel:+1 814 251 152">+1 814 251 152</a>
                </li>
             </ul>
-         </nav>
-      </div>
+            <ul class="info">
+               <li class="info-item">
+                  <a class="info-link" href="#">Login</a>
+               </li>
+               <li class="info-item">
+                  <a class="info-link" href="#">Register</a>
+               </li>
+            </ul>
+         </div>
+         
+         <div>
+            <img src="/images/logo.svg" alt="Logo">
+            <nav>
+               <ul class="nav">
+                  <li class="nav-item">
+                     <a href="#" class="nav-link">Home</a>
+                  </li>
+                  <li class="nav-item">
+                     <a href="#" class="nav-link">Page</a>
+                  </li class="nav-item">
+                  <li>
+                     <a href="#" class="nav-link">Portfolio</a>
+                  </li>
+                  <li class="nav-item">
+                     <a href="#" class="nav-link">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                     <a href="#" class="nav-link">Shop</a>
+                  </li>
+                  <li class="nav-item">
+                     <a href="#" class="nav-link">Shortcodes</a>
+                  </li>
+                  <li class="nav-item">
+                     <a href="#" class="nav-link">Features</a>
+                  </li>
+                  <li class="nav-item">
+                     <a href="#" class="nav-link">Contact</a>
+                  </li>
+                  <li>
+                     <button></button>
+                  </li>
+                  <li>
+                     <button></button>
+                  </li>
+               </ul>
+            </nav>
+         </div>
 
-      <div class="title center">
-         <p>Quickly Setup Your Website</p>
-         <h1>Stepup is designed specially for Startups</h1>
-      </div>
-      <div>
+         <div class="title center">
+            <div class="vertstripe"></div>
+            <p>Quickly Setup Your Website</p>
+            <h1>Stepup is designed specially for Startups</h1>
+            <div class="vertstripe"></div>
+         </div>
          <a href="#" class="btn">Buy now !</a>
       </div>
+
    </header>
 
    <main>
-      <div class="box center">
+      <div class="wrapper">
+         <div class="box center">
          <div class="box-item">
             <h2>100% Responsive Design</h2>
             <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin.</p>
@@ -94,19 +99,22 @@
             <h2>Fully Customizable</h2>
             <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin.</p>
          </div>
+         </div>
+      </div>
+      
+      <div class="wrapper">
+         <h2 class="title-h2"><span>about our company</span>who we are?</h2>
+         <div></div>
+         <p class="description">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.</p>
+         <p class="description">Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos.</p>
+         <ul class="list-description">
+            <li>Simplify compelling innovation and long-term high.</li>
+            <li>Quickly streamline focused deliverables whereas progressive.</li>
+         </ul>
+         <a href="#">Read More</a>
       </div>
 
-      <h2 class="title-h2"><span>about our company</span>who we are?</h2>
-      <div></div>
-      <p class="description">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.</p>
-      <p class="description">Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos.</p>
-      <ul class="list-description">
-         <li>Simplify compelling innovation and long-term high.</li>
-         <li>Quickly streamline focused deliverables whereas progressive.</li>
-      </ul>
-      <a href="#">Read More</a>
-
-      <div class="center">
+      <div class="wrapper center">
          <h2 class="title-h2"><span>See Portfolio</span>Recent Works</h2>
          <div></div>
          <p class="description">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus.</p>
