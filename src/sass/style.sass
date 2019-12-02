@@ -3,8 +3,6 @@ $gray-text: rgba(68, 68, 68, 0.5)
 $black-text: #000000
   
   
-  
-  
 body
   font-family: 'Lato', sans-serif
   font-weight: 400
@@ -16,35 +14,47 @@ body
   margin: 0 auto
 
 .header
-  padding-bottom: 214px
+  padding-bottom: 230px
+  background-image: url(../images/promo_bg.png)
+  background-size: cover
 
-.undernav
+.center
+  text-align: center
+
+.uppernav
   display: flex
   justify-content: space-between
   align-items: center
-  background-color: #000
 
 .info
   display: flex
   padding-left: 0px
   list-style-type: none
   align-items: center
-  
-.center
-  text-align: center
-  
+
 .info-item,.info-link
   color: rgba(255, 255, 255, 0.3)
   font-size: 14px
+  &:hover
+    color: #30a3f0
 
 .info-link
   text-decoration: none
 
+.info-link svg
+  margin-right: 11px
+  color: #30a3f0
+
 .info-right .info-item
-  margin-right: 32px
+  margin-right: 18px
+
+.register:before
+  content: '/'
+  margin-right: 6px
+  color: #444
 
 .info-left .info-item
-  margin-left: 18px
+  margin-left: 6px
 
 .main-nav
   display: flex
@@ -58,29 +68,44 @@ body
   display: flex
   padding-left: 0
   list-style-type: none
-
-.nav-item
-  margin-left: 8px
-
-.nav-link
-  color: #444444
-  text-decoration: none
-  padding: 11px 19px
-  border: 1px solid transparent
-
-.nav-link.active
-  color: #30a3f0
-  border: 1px solid
-  border-radius: 5px
-  padding: 11px 19px
-
-.nav-link:hover
-  color: #30a3f0
-  border: 1px solid
-  border-radius: 5px
+  &-btn
+    background-color: transparent
+    border: none
+    padding: 0
+  &-btn svg
+    color: #444444
+  &-btn svg:hover
+    color: #30a3f0
+  &-item
+    margin-left: 8px
+  &-item-btn
+    margin: 0 11px
+  &-link
+    color: #444444
+    text-decoration: none
+    padding: 11px 19px
+    border: 1px solid transparent
+  &-link:hover
+    color: #30a3f0
+    border: 1px solid
+    border-radius: 5px
 
 .title
-  margin-bottom: 40px
+  margin-bottom: 60px
+  &::before
+    content: ''
+    display: block
+    margin: 0 auto
+    width: 1px
+    height: 100px
+    background-color: #2b88c7
+  &::after
+    content: ''
+    display: block
+    margin: 0 auto
+    width: 1px
+    height: 100px
+    background-color: #2b88c7
   
 .title p
   margin-top: 29px
@@ -97,12 +122,7 @@ body
   text-transform: uppercase
   font-size: 45px
   font-weight: 800
-
-.vertstripe
-  background-color: #2b88c7
-  width: 1px
-  height: 100px
-  margin: 0 auto
+  line-height: 60px
 
 .btn
   font-weight: 700
@@ -113,31 +133,334 @@ body
   padding: 20px 42px
   border: 1px solid #30a3f0
   border-radius: 5px
+  transition: background-color 0.5s linear, color 0.5s ease
+  &:hover
+    background-color: #30a3f0
+    color: #ffffff
+    border: 1px solid #ffffff
+    border-radius: 5px
+    
+
+.page-line
+  border-bottom: 1px solid #e4e4e4
 
 .box
   display: flex
   border-left: 1px solid #e4e4e4
   border-right: 1px solid #e4e4e4
-  border-bottom: 1px solid #e4e4e4
-  &_item
+  &-item
     flex-basis: 33.333%
-    &_center
+    padding: 100px 60px 110px
+    &-center
       border-left: 1px solid #e4e4e4
       border-right: 1px solid #e4e4e4
-  &_item h2
+  &-item h2
     font-family: 'Raleway', sans-serif
     font-weight: 600
     font-size: 20px
-  &_item p
+  &-item p
     color: $gray-text
+    line-height: 28px
+  &-icon
+    width: 152px
+    height: 152px
+    font-size: 30px
+    color: #222222
+    line-height: 5
+    background-image: url(../images/rhombus_gray.png)
+    background-position: center center
+    background-repeat: no-repeat
+    margin: 0 auto 30px
+    transition: all 0.2s linear
+  &-item:hover &-icon
+    background-image: url(../images/rhombus_blue.png)
+    font-size: 40px
+    color: #ffffff
+    line-height: 3.8
+
+.intro
+  position: relative
+  margin: 0 auto
+  margin-top: 100px
+  padding-bottom: 100px
+  &-text
+    max-width: 530px
+  h2
+    margin-bottom: 20px
 
 .title-h2
+  margin: 0 auto
+  margin-bottom: 14px
+  font-family: 'Raleway', sans-serif
   font-size: 30px
   font-weight: 800
-  text-transform: capitalize
+  text-transform: uppercase
 
 .title-h2 span
+  display: block
   font-size: 16px
+  font-weight: 400
   color: #30a3f0
   text-transform: capitalize
+  margin-bottom: 18px
 
+.line
+  display: block
+  width: 52px
+  height: 14px
+  background-image: url(../images/line.svg)
+  background-repeat: no-repeat
+
+.description
+  margin-top: 41px  
+  color: #707070
+  line-height: 26px
+  margin-bottom: 0
+  & > p
+    margin-bottom: 41px
+
+.list-description
+  color: #222222
+  padding-left: 0
+  margin: 40px 0 60px 0
+  list-style-type: none
+  & > li
+    margin-bottom: 27px
+    color: #222222
+    padding-left: 37px
+    position: relative
+    &::before
+      content: ''
+      display: block
+      position: absolute
+      width: 16px
+      height: 14px
+      background-image: url(../images/check.png)
+      background-repeat: no-repeat
+      left: 0
+      top: calc( 50% - 7px )
+
+.btn-blue
+  font-size: 14px
+  font-weight: 700
+  text-transform: uppercase
+  text-decoration: none
+  color: #ffffff
+  background-color: #30a3f0
+  border: 1px solid #30a3f0
+  padding: 20px 42px
+  border-radius: 5px
+  transition: background-color 0.5s linear, color 0.5s ease
+  &:hover
+    color: #30a3f0
+    background-color: #ffffff
+    border: 1px solid #30a3f0
+
+.mockup
+  display: block
+  width: 625px
+  height: 557px
+  background-image: url(../images/mockup.png)
+  background-size: contain
+  background-repeat: no-repeat
+  position: absolute
+  right: -78px
+  bottom: 0
+
+.gray, .team
+  padding-top: 100px
+  padding-bottom: 60px
+  background-color: #fafafa
+  .line-double
+    display: block
+    margin: 0 auto 30px
+    width: 91px
+    height: 14px
+    background-image: url(../images/line_double.svg)
+    background-repeat: no-repeat
+  .description
+    max-width: 690px
+    margin: 0 auto
+
+.photo
+  display: flex
+  &-item
+    overflow: hidden
+    flex-basis: 20%
+    height: 350px
+    position: relative
+    transition: all 0.2s linear
+    &:hover
+      background-color: rgba(34, 34, 34, 0.8)
+    &:hover .photo-text
+      display: block
+    &:hover .photo-btn
+      z-index: 1
+  &-btn
+    display: flex
+    width: 120px
+    height: 60px
+    position: absolute
+    bottom: 0
+    right: 0
+    z-index: -2
+    transition: all 0.2s linear
+    & a
+      display: block
+      width: 60px
+      height: 60px
+      background-color: #30a3f0
+      font-size: 16[x]
+      color: #ffffff
+      padding: 22px 22px
+      transition: all 0.2s linear
+      &:hover
+        background-color: #ffffff
+        color: #30a3f0
+  &-item img
+    width: 100%
+    height: 350px
+    position: absolute
+    top: 50%
+    left: 50%
+    object-fit: cover
+    transform: translate(-50%, -50%)
+    z-index: -1    
+  &-text
+    display: none
+    position: absolute
+    width: 100%
+    text-align: center
+    top: calc( 50% - 30px )
+    & h3
+      font-family: 'Raleway', sans-serif
+      font-size: 22px
+      font-weight: 700
+      text-transform: uppercase
+      color: #ffffff
+      margin-top: 0
+      margin-bottom: 14px
+    & p
+      margin-bottom: 0
+      color: #707070
+
+.feature
+  margin: 125px auto
+  display: grid
+  grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr
+  grid-gap: 110px 50px
+  &-item
+    display: flex
+    justify-content: space-between
+    align-items: center
+    border: 1px solid transparent
+    border-radius: 5px
+    &:hover &-icon
+      background-image: url(../images/rhombus_blue_min.png)
+      color: #ffffff
+    &:hover
+      border: 1px solid #30a3f0
+    & h3
+      font-family: 'Raleway', sans-serif
+      font-size: 18px
+      font-weight: 600
+      margin-top: 5px
+      margin-bottom: 20px
+    & p
+      margin-top: 0
+    &-icon
+      font-size: 24px
+      color: #c9c9c9
+      text-align: center
+      line-height: 4
+      width: 95px
+      height: 95px
+      background-size: 95px 95px
+      flex-basis: 95px
+      margin: auto 0 auto 5px
+    &-text
+      flex-basis: calc( 100% - 125px )
+
+.tour-bg
+  max-height: 670px
+  background-image: url(../images/middle_bg.png)
+  background-size: cover
+  padding-top: 110px
+  padding-bottom: 110px
+  .title
+    margin-bottom: 0
+  .title h1
+    margin-bottom: 60px
+  .center > p
+    margin-bottom: 50px
+
+.team
+  max-height: 1000px
+  padding-top: 100px
+  padding-bottom: 104px
+  background-color: #fff
+  &-photo
+    margin-top: 58px
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    &-item
+      flex-basis: 31%
+      &-member
+        position: relative
+        width: 370px
+        height: 370px
+        margin-bottom: 40px
+        .blank
+          width: 370px
+          height: 370px
+          position: absolute
+          top: 0
+          left: 0
+          background-color: rgba(255, 255, 255, 0.5)
+          overflow: hidden
+          z-index: 2
+        .face
+          position: absolute
+          top: 50%
+          left: 50%
+          transform: translate(-50%, -50%)
+          object-fit: cover
+          z-index: 1
+      &-position
+        margin: 0
+        margin-bottom: 14px
+        font-size: 14px
+        color: #30a3f0
+      &-name
+        margin: 0
+        margin-bottom: 20px
+        font-family: 'Raleway', sans-serif
+        font-weight: 600
+        color: #222222
+      &-social
+        display: flex
+        list-style-type: none
+        padding-left: 0
+        justify-content: center
+        &-icon
+          margin: 0 5px
+        &-icon > a
+          display: block
+          color: #c9c9c9
+          text-decoration: none
+          font-size: 14px
+          text-align: center
+          line-height: 3
+          background-image: url(../images/rhombus_gray_min.png)
+          background-size: 40px 40px
+          background-position: center center
+          background-repeat: no-repeat
+          width: 40px
+          height: 40px
+          transition: all 0.2s linear
+        a:hover
+          color: #ffffff
+          background-image: url(../images/rhombus_blue_min.png)
+    &-item:hover .blank
+      z-index: 0
