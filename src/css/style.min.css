@@ -98,7 +98,7 @@ body { font-family: 'Lato', sans-serif; font-weight: 400; font-size: 16px; }
 
 .btn-blue:hover { color: #30a3f0; background-color: #ffffff; border: 1px solid #30a3f0; }
 
-.mockup { display: block; width: 625px; height: 557px; background-image: url(../images/mockup.png); background-size: contain; background-repeat: no-repeat; position: absolute; right: -78px; bottom: 0; }
+.mockup-img { display: block; width: 625px; height: 557px; background-image: url(../images/mockup.png); background-size: contain; background-repeat: no-repeat; position: absolute; right: -78px; bottom: 0; }
 
 .gray, .team { padding-top: 100px; padding-bottom: 60px; background-color: #fafafa; }
 
@@ -179,4 +179,18 @@ body { font-family: 'Lato', sans-serif; font-weight: 400; font-size: 16px; }
 .team-photo-item-social a:hover { color: #ffffff; background-image: url(../images/rhombus_blue_min.png); }
 
 .team-photo-item:hover .blank { z-index: 0; }
+
+.mockup { padding-bottom: 0; }
+
+.mockup .screens { margin-top: 58px; }
+
+.stat { min-height: 400px; background-color: #111111; color: #ffffff; }
+
+.stat-box { display: -webkit-box; display: -ms-flexbox; display: flex; padding: 115px 74px 0 74px; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; font-size: 60px; color: #30a3f0; }
+
+.stat-box-item { text-align: center; }
+
+.stat-box h3 { margin: 0; margin-top: 38px; font-size: 50px; font-weight: 700; }
+
+.stat-box h3 span { margin-bottom: 24px; display: block; font-size: 16px; font-weight: 400; color: #707070; }
 /*# sourceMappingURL=style.min.css.map */
