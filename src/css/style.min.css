@@ -28,7 +28,7 @@ body { font-family: 'Lato', sans-serif; font-weight: 400; font-size: 16px; backg
 
 .nav { display: -webkit-box; display: -ms-flexbox; display: flex; padding-left: 0; list-style-type: none; }
 
-.nav-btn { background-color: transparent; border: none; padding: 0; }
+.nav-btn { background-color: transparent; border: none; padding: 0; cursor: pointer; }
 
 .nav-btn svg { color: #444444; }
 
@@ -220,9 +220,9 @@ body { font-family: 'Lato', sans-serif; font-weight: 400; font-size: 16px; backg
 
 .blog-grid-item .blog-thumb .blog-share button span { font-size: 14px; margin-left: 5px; }
 
-.blog-grid-item .blog-thumb .blog-share .blog-btn-comment { color: #ffffff; font-size: 14px; font-weight: 700; text-decoration: none; padding: 8px 11px 8px; background-color: #30a3f0; border: 1px solid #30a3f0; border-radius: 5px; }
+.blog-grid-item .blog-thumb .blog-share .blog-btn-comment { color: #ffffff; font-size: 14px; font-weight: 700; text-decoration: none; padding: 8px 11px 8px; background-color: #30a3f0; border: 1px solid #30a3f0; border-radius: 5px; cursor: pointer; }
 
-.blog-grid-item .blog-thumb .blog-share .blog-btn-like { color: #30a3f0; font-size: 14px; font-weight: 700; text-decoration: none; padding: 8px 11px 8px; background-color: #ffffff; border: 1px solid #ffffff; border-radius: 5px; }
+.blog-grid-item .blog-thumb .blog-share .blog-btn-like { color: #30a3f0; font-size: 14px; font-weight: 700; text-decoration: none; padding: 8px 11px 8px; background-color: #ffffff; border: 1px solid #ffffff; border-radius: 5px; cursor: pointer; }
 
 .blog-grid-item .blog-thumb img { width: 285px; height: 100%; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); -o-object-fit: cover; object-fit: cover; z-index: -1; }
 
@@ -239,4 +239,36 @@ body { font-family: 'Lato', sans-serif; font-weight: 400; font-size: 16px; backg
 .blog-grid-item .blog-text > a { text-decoration: none; font-size: 14px; color: #30a3f0; -webkit-transform: translateY(9px); transform: translateY(9px); }
 
 .blog-grid-item .blog-text > a span { margin-right: 10px; }
+
+.company { background-color: #fafafa; padding: 100px 0px 100px 0px; }
+
+.company-box { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+.company-item { background-image: url(../images/company.png); background-repeat: no-repeat; height: 93px; }
+
+.company-one { width: 118px; -ms-flex-preferred-size: 118px; flex-basis: 118px; }
+
+.footer { background-color: #151515; }
+
+.footer-btn { display: block; width: 46px; height: 34px; margin: 0 auto; background-color: #1a1a1a; font-size: 26px; color: #707070; border: none; cursor: pointer; }
+
+.footer-btn:hover { background-color: #707070; color: #30a3f0; }
+
+.footer-btn:focus { outline: none; }
+
+.footer-bg { background-color: #1a1a1a; padding: 32px 0px 32px 0px; }
+
+.footer-bg-text { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; font-size: 14px; color: rgba(255, 255, 255, 0.3); }
+
+.footer-bg-text p { margin: 0; }
+
+.footer-bg-text .footer-list { display: -webkit-box; display: -ms-flexbox; display: flex; list-style-type: none; padding-left: 0; margin: 0; }
+
+.footer-bg-text .footer-list > li { padding-right: 24px; margin-left: 22px; border-right: 1px solid #3a3a3a; }
+
+.footer-bg-text .footer-list > li:last-child { padding-right: 0; border: none; }
+
+.footer-bg-text .footer-list > li > a { text-decoration: none; color: rgba(255, 255, 255, 0.3); }
+
+.footer-bg-text .footer-list > li > a:hover { color: #30a3f0; }
 /*# sourceMappingURL=style.min.css.map */

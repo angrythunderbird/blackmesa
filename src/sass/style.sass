@@ -73,6 +73,7 @@ body
     background-color: transparent
     border: none
     padding: 0
+    cursor: pointer
   &-btn svg
     color: #444444
   &-btn svg:hover
@@ -561,6 +562,7 @@ body
             background-color: #30a3f0
             border: 1px solid #30a3f0
             border-radius: 5px
+            cursor: pointer
           & .blog-btn-like
             color: #30a3f0
             font-size: 14px
@@ -570,6 +572,7 @@ body
             background-color: #ffffff
             border: 1px solid #ffffff
             border-radius: 5px
+            cursor: pointer
       .blog-thumb img
           width: 285px
           height: 100%
@@ -618,3 +621,64 @@ body
             margin-right: 10px
           & i
           transform: translateY(9px)
+
+.company
+  background-color: #fafafa
+  padding: 100px 0px 100px 0px
+  &-box
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &-item
+    background-image: url(../images/company.png)
+    background-repeat: no-repeat
+    height: 93px
+  &-one
+    width: 118px
+    flex-basis: 118px  
+
+.footer
+  background-color: #151515
+  &-btn
+    display: block
+    width: 46px
+    height: 34px
+    margin: 0 auto
+    background-color: #1a1a1a
+    font-size: 26px
+    color: #707070
+    border: none
+    cursor: pointer
+    &:hover
+      background-color: #707070
+      color: #30a3f0
+    &:focus
+      outline: none
+  &-bg
+    background-color: #1a1a1a
+    padding: 32px 0px 32px 0px
+    &-text
+      display: flex
+      justify-content: space-between
+      align-items: center
+      font-size: 14px
+      color: rgba(255, 255, 255, 0.3)
+    &-text p
+      margin: 0
+    &-text .footer-list
+      display: flex
+      list-style-type: none
+      padding-left: 0
+      margin: 0
+      & > li
+        padding-right: 24px
+        margin-left: 22px
+        border-right: 1px solid #3a3a3a
+      & > li:last-child
+        padding-right: 0
+        border: none
+      & > li > a
+        text-decoration: none
+        color: rgba(255, 255, 255, 0.3)
+        &:hover
+          color: #30a3f0
