@@ -7,6 +7,7 @@ body
   font-family: 'Lato', sans-serif
   font-weight: 400
   font-size: 16px
+  background-color: none
 
 .wrapper
   width: 100%
@@ -267,10 +268,12 @@ body
   right: -78px
   bottom: 0
 
-.gray, .team
+.gray
+  background-color: #fafafa
+
+.gray, .team, .blog
   padding-top: 100px
   padding-bottom: 60px
-  background-color: #fafafa
   .line-double
     display: block
     margin: 0 auto 30px
@@ -494,3 +497,124 @@ body
     font-size: 16px
     font-weight: 400
     color: #707070
+
+.blog
+  padding: 100px 0
+  & .description
+    margin-bottom: 58px
+  &-grid
+    display: grid
+    grid-template: 1fr 1fr / 1fr 1fr
+    grid-gap: 30px
+    margin: 0 auto
+    &-item
+      display: flex
+      align-items: cover
+      height: 100%
+      &:hover
+        .blog-thumb
+          background-color: rgba(1, 1, 1, 0.7)
+      &:hover
+        .blog-thumb .blog-eye
+          z-index: 3
+      .blog-thumb
+        position: relative
+        width: 285px
+        flex-basis: 285px
+        overflow: hidden
+        &::after
+          content: ''
+          display: block
+          position: absolute
+          top: 39px
+          right: 0
+          background-image: url(../images/blog-triangle.png)
+          width: 21px
+          height: 42px
+        .blog-eye
+          position: absolute
+          top: 144px
+          left: 50%
+          transform: translateX(-50%)
+          z-index: -1
+          color: #ffffff
+          font-size: 30px
+        .blog-share
+          position: absolute
+          left: 78px
+          bottom: 23px
+          display: flex
+          justify-content: space-between
+          width: 130px
+          height: 30px
+          & button i
+            font-size: 12px
+          & button span
+            font-size: 14px
+            margin-left: 5px
+          & .blog-btn-comment
+            color: #ffffff
+            font-size: 14px
+            font-weight: 700
+            text-decoration: none
+            padding: 8px 11px 8px
+            background-color: #30a3f0
+            border: 1px solid #30a3f0
+            border-radius: 5px
+          & .blog-btn-like
+            color: #30a3f0
+            font-size: 14px
+            font-weight: 700
+            text-decoration: none
+            padding: 8px 11px 8px
+            background-color: #ffffff
+            border: 1px solid #ffffff
+            border-radius: 5px
+      .blog-thumb img
+          width: 285px
+          height: 100%
+          position: absolute
+          top: 50%
+          left: 50%
+          transform: translate(-50%, -50%)
+          object-fit: cover
+          z-index: -1
+      .blog-text
+        background-color: #fafafa
+        padding: 46px 38px 50px
+        margin: 0
+        flex-basis: 209px
+        & > h3
+          font-family: 'Raleway', sans-serif
+          font-size: 18px
+          font-weight: 600
+          margin: 0
+        & ul
+          display: flex
+          justify-content: flex-start
+          align-items: center
+          list-style: none
+          text-transform: uppercase
+          font-size: 12px
+          color: #444444
+          padding: 0
+          margin: 0
+          margin-top: 11px
+        & ul > li:first-child
+          padding-right: 13px
+          margin-right: 14px
+          border-right: 1px solid #707070
+        & > p
+          margin: 0
+          margin-top: 30px
+          margin-bottom: 26px
+          color: #444444
+          line-height: 26px
+        & > a
+          text-decoration: none
+          font-size: 14px
+          color: #30a3f0
+          & span
+            margin-right: 10px
+          & i
+          transform: translateY(9px)
