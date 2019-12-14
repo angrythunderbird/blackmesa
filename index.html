@@ -9,7 +9,7 @@
    <!-- <link rel="stylesheet" href="/normalize.css"> -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
    <link rel="stylesheet" href="/src/css/all.min.css">
-   <link rel="stylesheet" href="/src/css/style.min.css"> 
+   <link rel="stylesheet" href="/src/css/clear-min.css"> 
 </head>
 
 <body>
@@ -136,11 +136,9 @@
 
       <div class="gray">
          <div class="wrapper center">
-            <div class="portfolio">
-               <h2 class="title-h2"><span>See Portfolio</span>Recent Works</h2>
-               <div class="line-double"></div>
-               <p class="description">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus.</p>
-            </div>  
+            <h2 class="title-h2"><span>See Portfolio</span>Recent Works</h2>
+            <div class="line-double"></div>
+            <p class="description">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus.</p>
          </div>
       </div>
 
@@ -474,7 +472,7 @@
 
       <footer>
          <div class="footer">
-            <button class="footer-btn"><i class="fas fa-angle-double-up"></i></button>
+            <button id="btnUp" class="footer-btn"><i class="fas fa-angle-double-up"></i></button>
             <div class="footer-bg">
                <div class="wrapper">
                   <div class="footer-bg-text">
@@ -495,5 +493,11 @@
       
    </main>
    <script src="/src/js/all.min.js"></script>
+   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+   <script>
+      $("#btnUp").click(function(){
+         $("html").animate({scrollTop: 0}, "slow");
+      });
+   </script>
 </body>
 </html>

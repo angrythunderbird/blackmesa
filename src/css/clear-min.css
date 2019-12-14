@@ -46,9 +46,9 @@ body { font-family: 'Lato', sans-serif; font-weight: 400; font-size: 16px; backg
 
 .title::before { content: ''; display: block; margin: 0 auto; width: 1px; height: 100px; background-color: #2b88c7; }
 
-.title::after { content: ''; display: block; margin: 0 auto; width: 1px; height: 100px; background-color: #2b88c7; }
+.title::after {content: '';display: block;margin: 0 auto;width: 1px;height: 100px;background-color: #2b88c7;}
 
-.title p { margin-top: 26px; margin-bottom: 6px; font-family: 'Raleway', sans-serif; color: #30a3f0; text-transform: capitalize; font-size: 18px; }
+.title p {margin-top: 26px;margin-bottom: 6px;font-family: 'Raleway', sans-serif;color: #30a3f0;text-transform: capitalize;font-size: 18px;}
 
 .title h1 { max-width: 720px; margin: 0 auto 16px; font-family: 'Raleway', sans-serif; color: #ffffff; text-transform: uppercase; font-size: 45px; font-weight: 800; line-height: 60px; }
 
@@ -104,15 +104,15 @@ body { font-family: 'Lato', sans-serif; font-weight: 400; font-size: 16px; backg
 
 .gray { background-color: #fafafa; }
 
-.gray, .team, .blog { padding-top: 100px; padding-bottom: 56px; }
+.gray, .team, .blog {padding-top: 95px;padding-bottom: 56px;}
 
 .gray .title-h2, .team .title-h2, .blog .title-h2 { margin-bottom: 7px; }
 
 .gray .title-h2 span, .team .title-h2 span, .blog .title-h2 span { margin-bottom: 14px; }
 
-.gray .line-double, .team .line-double, .blog .line-double { display: block; margin: 0 auto 25px; width: 91px; height: 14px; background-image: url(../images/line_double.svg); background-repeat: no-repeat; }
+.gray .line-double, .team .line-double, .blog .line-double {display: block;margin: 0 auto 23px;width: 91px;height: 14px;background-image: url(../images/line_double.svg);background-repeat: no-repeat;}
 
-.gray .description, .team .description, .blog .description { max-width: 690px; margin: 0 auto; }
+.gray .description, .team .description, .blog .description {max-width: 690px;margin: 0 auto;}
 
 .photo { display: -webkit-box; display: -ms-flexbox; display: flex; }
 
@@ -154,17 +154,17 @@ body { font-family: 'Lato', sans-serif; font-weight: 400; font-size: 16px; backg
 
 .feature-item-text { -ms-flex-preferred-size: calc( 100% - 125px); flex-basis: calc( 100% - 125px); }
 
-.tour-bg { max-height: 670px; background-image: url(../images/middle_bg.png); background-size: cover; padding-top: 110px; padding-bottom: 72px; }
+.tour-bg {max-height: 670px;background-image: url(../images/middle_bg.png);background-size: cover;padding-top: 110px;padding-bottom: 130px;}
 
 .tour-bg .title { margin-bottom: 0; }
 
-.tour-bg .title h1 { margin-bottom: 60px; }
+.tour-bg .title h1 {margin-bottom: 40px;}
 
-.tour-bg .center > p { margin-bottom: 50px; }
+.tour-bg .center > p {margin-bottom: 31px;}
 
 .team { max-height: 1000px; padding-top: 100px; padding-bottom: 104px; background-color: #fff; }
 
-.team-photo { margin-top: 58px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; }
+.team-photo {margin-top: 55px;display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-pack: justify;-ms-flex-pack: justify;justify-content: space-between;-webkit-box-align: start;-ms-flex-align: start;align-items: flex-start;}
 
 .team-photo-item { -ms-flex-preferred-size: 31%; flex-basis: 31%; }
 
@@ -174,9 +174,9 @@ body { font-family: 'Lato', sans-serif; font-weight: 400; font-size: 16px; backg
 
 .team-photo-item-member .face { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); -o-object-fit: cover; object-fit: cover; z-index: 1; }
 
-.team-photo-item-position { margin: 0; margin-bottom: 14px; font-size: 14px; color: #30a3f0; }
+.team-photo-item-position {margin: 0;margin-bottom: 12px;font-size: 14px;color: #30a3f0;}
 
-.team-photo-item-name { margin: 0; margin-bottom: 20px; font-family: 'Raleway', sans-serif; font-weight: 600; color: #222222; }
+.team-photo-item-name {FONT-WEIGHT: 600;margin: 0;margin-bottom: 11px;font-family: 'Raleway', sans-serif;font-weight: 600;color: #222222;letter-spacing: 2px;}
 
 .team-photo-item-social { display: -webkit-box; display: -ms-flexbox; display: flex; list-style-type: none; padding-left: 0; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
 
@@ -194,15 +194,15 @@ body { font-family: 'Lato', sans-serif; font-weight: 400; font-size: 16px; backg
 
 .stat { min-height: 400px; background-color: #111111; color: #ffffff; }
 
-.stat-box { display: -webkit-box; display: -ms-flexbox; display: flex; padding: 115px 74px 0 74px; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; font-size: 60px; color: #30a3f0; }
+.stat-box {display: -webkit-box;display: -ms-flexbox;display: flex;padding: 96px 74px 0 74px;-webkit-box-pack: justify;-ms-flex-pack: justify;justify-content: space-between;-webkit-box-align: end;-ms-flex-align: end;align-items: flex-end;font-size: 60px;color: #30a3f0;}
 
 .stat-box-item { text-align: center; }
 
-.stat-box h3 { margin: 0; margin-top: 38px; font-size: 50px; font-weight: 700; }
+.stat-box h3 {margin: 0;margin-top: 30px;font-size: 50px;font-weight: 700;}
 
-.stat-box h3 span { margin-bottom: 24px; display: block; font-size: 16px; font-weight: 400; color: #707070; }
+.stat-box h3 span {margin-bottom: 18px;display: block;font-size: 16px;font-weight: 400;color: #707070;}
 
-.blog { padding: 100px 0; }
+.blog {padding: 91px 0;}
 
 .blog .description { margin-bottom: 58px; }
 
@@ -287,4 +287,3 @@ body { font-family: 'Lato', sans-serif; font-weight: 400; font-size: 16px; backg
 .footer-bg-text .footer-list > li > a { text-decoration: none; color: rgba(255, 255, 255, 0.3); }
 
 .footer-bg-text .footer-list > li > a:hover { color: #30a3f0; }
-/*# sourceMappingURL=style.min.css.map */

@@ -15,7 +15,7 @@ body
   margin: 0 auto
 
 .header
-  padding-bottom: 230px
+  padding-bottom: 212px
   background-image: url(../images/promo_bg.png)
   background-size: cover
 
@@ -26,6 +26,8 @@ body
   display: flex
   justify-content: space-between
   align-items: center
+  padding-top: 12px
+  padding-bottom: 7px
 
 .info
   display: flex
@@ -43,11 +45,11 @@ body
   text-decoration: none
 
 .info-link svg
-  margin-right: 11px
+  margin-right: 8px
   color: #30a3f0
 
 .info-right .info-item
-  margin-right: 18px
+  margin-right: 28px
 
 .register:before
   content: '/'
@@ -61,7 +63,7 @@ body
   display: flex
   justify-content: space-between
   align-items: center
-  padding: 26px 40px 26px
+  padding: 25px 30px 25px 40px
   margin-bottom: 220px
   background-color: #fff
 
@@ -110,7 +112,8 @@ body
     background-color: #2b88c7
   
 .title p
-  margin-top: 29px
+  margin-top: 26px
+  margin-bottom: 6px
   font-family: 'Raleway', sans-serif
   color: #30a3f0
   text-transform: capitalize
@@ -118,7 +121,7 @@ body
 
 .title h1
   max-width: 720px
-  margin: 0 auto 32px
+  margin: 0 auto 16px
   font-family: 'Raleway', sans-serif
   color: #ffffff
   text-transform: uppercase
@@ -152,7 +155,7 @@ body
   border-right: 1px solid #e4e4e4
   &-item
     flex-basis: 33.333%
-    padding: 100px 60px 110px
+    padding: 92px 52px 90px
     &-center
       border-left: 1px solid #e4e4e4
       border-right: 1px solid #e4e4e4
@@ -162,7 +165,7 @@ body
     font-size: 20px
   &-item p
     color: $gray-text
-    line-height: 28px
+    line-height: 25px
   &-icon
     width: 152px
     height: 152px
@@ -172,7 +175,7 @@ body
     background-image: url(../images/rhombus_gray.png)
     background-position: center center
     background-repeat: no-repeat
-    margin: 0 auto 30px
+    margin: 0 auto 23px
     transition: all 0.2s linear
   &-item:hover &-icon
     background-image: url(../images/rhombus_blue.png)
@@ -183,13 +186,16 @@ body
 .intro
   position: relative
   margin: 0 auto
-  margin-top: 100px
-  padding-bottom: 100px
+  margin-top: 98px
+  padding-bottom: 116px
   &-text
     max-width: 530px
   h2
-    margin-bottom: 20px
-
+    margin-bottom: 10px
+  .title-h2 span
+    margin-bottom: 13px
+  .title-h2
+    margin-bottom: 13px
 .title-h2
   margin: 0 auto
   margin-bottom: 14px
@@ -214,20 +220,18 @@ body
   background-repeat: no-repeat
 
 .description
-  margin-top: 41px  
+  margin-top: 32px  
   color: #707070
   line-height: 26px
   margin-bottom: 0
-  & > p
-    margin-bottom: 41px
 
 .list-description
   color: #222222
   padding-left: 0
-  margin: 40px 0 60px 0
+  margin: 29px 0 54px
   list-style-type: none
   & > li
-    margin-bottom: 27px
+    margin-bottom: 22px
     color: #222222
     padding-left: 37px
     position: relative
@@ -250,7 +254,7 @@ body
   color: #ffffff
   background-color: #30a3f0
   border: 1px solid #30a3f0
-  padding: 20px 42px
+  padding: 15px 43px
   border-radius: 5px
   transition: background-color 0.5s linear, color 0.5s ease
   &:hover
@@ -266,7 +270,7 @@ body
   background-size: contain
   background-repeat: no-repeat
   position: absolute
-  right: -78px
+  right: -82px
   bottom: 0
 
 .gray
@@ -274,10 +278,14 @@ body
 
 .gray, .team, .blog
   padding-top: 100px
-  padding-bottom: 60px
+  padding-bottom: 56px
+  .title-h2
+    margin-bottom: 7px
+  .title-h2 span
+    margin-bottom: 14px
   .line-double
     display: block
-    margin: 0 auto 30px
+    margin: 0 auto 25px
     width: 91px
     height: 14px
     background-image: url(../images/line_double.svg)
@@ -349,10 +357,10 @@ body
       color: #707070
 
 .feature
-  margin: 125px auto
+  margin: 117px auto 118px
   display: grid
   grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr
-  grid-gap: 110px 50px
+  grid-gap: 99px 28px
   &-item
     display: flex
     justify-content: space-between
@@ -369,7 +377,7 @@ body
       font-size: 18px
       font-weight: 600
       margin-top: 5px
-      margin-bottom: 20px
+      margin-bottom: 9px
     & p
       margin-top: 0
     &-icon
@@ -390,12 +398,12 @@ body
   background-image: url(../images/middle_bg.png)
   background-size: cover
   padding-top: 110px
-  padding-bottom: 110px
-  .title
+  padding-bottom: 72px
+  & .title
     margin-bottom: 0
-  .title h1
+  & .title h1
     margin-bottom: 60px
-  .center > p
+  & .center > p
     margin-bottom: 50px
 
 .team
@@ -623,7 +631,7 @@ body
           transform: translateY(9px)
 
 .company
-  background-color: #fafafa
+  background-color: #fdfdfd
   padding: 100px 0px 100px 0px
   &-box
     display: flex
@@ -634,8 +642,29 @@ body
     background-repeat: no-repeat
     height: 93px
   &-one
-    width: 118px
-    flex-basis: 118px  
+    width: 126px
+    flex-basis: 126px
+    background-position: -14px center
+  &-two
+    width: 126px
+    flex-basis: 126px
+    background-position: -214px center
+  &-three
+    width: 126px
+    flex-basis: 126px
+    background-position: -414px center
+  &-four
+    width: 126px
+    flex-basis: 126px
+    background-position: -614px center
+  &-five
+    width: 126px
+    flex-basis: 126px
+    background-position: -814px center
+  &-six
+    width: 126px
+    flex-basis: 126px
+    background-position: -1014px center
 
 .footer
   background-color: #151515
