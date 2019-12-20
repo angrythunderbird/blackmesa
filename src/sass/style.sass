@@ -1,6 +1,11 @@
 $blue-text: #30a3f0
-$gray-text: rgba(68, 68, 68, 0.5)
-$black-text: #000000
+
+@mixin img-center
+  position: absolute
+  top: 50%
+  left: 50%
+  object-fit: cover
+  transform: translate(-50%, -50%)
   
   
 body
@@ -34,30 +39,24 @@ body
   padding-left: 0px
   list-style-type: none
   align-items: center
-
-.info-item,.info-link
-  color: rgba(255, 255, 255, 0.3)
-  font-size: 14px
-  &:hover
-    color: #30a3f0
-
-.info-link
-  text-decoration: none
-
-.info-link svg
-  margin-right: 8px
-  color: #30a3f0
-
-.info-right .info-item
-  margin-right: 28px
-
-.register:before
-  content: '/'
-  margin-right: 6px
-  color: #444
-
-.info-left .info-item
-  margin-left: 6px
+  &-item, &-link
+    color: rgba(255, 255, 255, 0.3)
+    font-size: 14px
+    &:hover
+      color: $blue-text
+  &-link
+    text-decoration: none
+  &-link svg
+    margin-right: 8px
+    color: $blue-text
+  &-right .info-item
+    margin-right: 28px
+  &-item .register:before
+    content: '/'
+    margin-right: 6px
+    color: #444
+  &-left .info-item
+    margin-left: 6px
 
 .main-nav
   display: flex
@@ -79,18 +78,19 @@ body
   &-btn svg
     color: #444444
   &-btn svg:hover
-    color: #30a3f0
+    color: $blue-text
   &-item
     margin-left: 8px
   &-item-btn
     margin: 0 11px
+    border: none
   &-link
     color: #444444
     text-decoration: none
     padding: 11px 19px
     border: 1px solid transparent
   &-link:hover
-    color: #30a3f0
+    color: $blue-text
     border: 1px solid
     border-radius: 5px
 
@@ -115,7 +115,7 @@ body
   margin-top: 26px
   margin-bottom: 6px
   font-family: 'Raleway', sans-serif
-  color: #30a3f0
+  color: $blue-text
   text-transform: capitalize
   font-size: 18px
 
@@ -131,16 +131,16 @@ body
 
 .btn
   font-weight: 700
-  color: #30a3f0
+  color: $blue-text
   text-transform: uppercase
   font-size: 14px
   text-decoration: none
   padding: 20px 42px
-  border: 1px solid #30a3f0
+  border: 1px solid $blue-text
   border-radius: 5px
   transition: background-color 0.5s linear, color 0.5s ease
   &:hover
-    background-color: #30a3f0
+    background-color: $blue-text
     color: #ffffff
     border: 1px solid #ffffff
     border-radius: 5px
@@ -164,7 +164,7 @@ body
     font-weight: 600
     font-size: 20px
   &-item p
-    color: $gray-text
+    color: rgba(68, 68, 68, 0.5)
     line-height: 25px
   &-icon
     width: 152px
@@ -208,7 +208,7 @@ body
   display: block
   font-size: 16px
   font-weight: 400
-  color: #30a3f0
+  color: $blue-text
   text-transform: capitalize
   margin-bottom: 18px
 
@@ -252,15 +252,15 @@ body
   text-transform: uppercase
   text-decoration: none
   color: #ffffff
-  background-color: #30a3f0
-  border: 1px solid #30a3f0
+  background-color: $blue-text
+  border: 1px solid $blue-text
   padding: 15px 43px
   border-radius: 5px
   transition: background-color 0.5s linear, color 0.5s ease
   &:hover
-    color: #30a3f0
+    color: $blue-text
     background-color: #ffffff
-    border: 1px solid #30a3f0
+    border: 1px solid $blue-text
 
 .mockup-img
   display: block
@@ -321,22 +321,18 @@ body
       display: block
       width: 60px
       height: 60px
-      background-color: #30a3f0
+      background-color: $blue-text
       font-size: 16[x]
       color: #ffffff
       padding: 22px 22px
       transition: all 0.2s linear
       &:hover
         background-color: #ffffff
-        color: #30a3f0
+        color: $blue-text
   &-item img
     width: 100%
     height: 350px
-    position: absolute
-    top: 50%
-    left: 50%
-    object-fit: cover
-    transform: translate(-50%, -50%)
+    @include img-center
     z-index: -1    
   &-text
     display: none
@@ -371,7 +367,7 @@ body
       background-image: url(../images/rhombus_blue_min.png)
       color: #ffffff
     &:hover
-      border: 1px solid #30a3f0
+      border: 1px solid $blue-text
     & h3
       font-family: 'Raleway', sans-serif
       font-size: 18px
@@ -443,7 +439,7 @@ body
         margin: 0
         margin-bottom: 14px
         font-size: 14px
-        color: #30a3f0
+        color: $blue-text
       &-name
         margin: 0
         margin-bottom: 20px
@@ -492,7 +488,7 @@ body
     justify-content: space-between
     align-items: flex-end
     font-size: 60px
-    color: #30a3f0
+    color: $blue-text
     &-item
       text-align: center
   &-box h3
@@ -567,12 +563,12 @@ body
             font-weight: 700
             text-decoration: none
             padding: 8px 11px 8px
-            background-color: #30a3f0
-            border: 1px solid #30a3f0
+            background-color: $blue-text
+            border: 1px solid $blue-text
             border-radius: 5px
             cursor: pointer
           & .blog-btn-like
-            color: #30a3f0
+            color: $blue-text
             font-size: 14px
             font-weight: 700
             text-decoration: none
@@ -584,11 +580,7 @@ body
       .blog-thumb img
           width: 285px
           height: 100%
-          position: absolute
-          top: 50%
-          left: 50%
-          transform: translate(-50%, -50%)
-          object-fit: cover
+          @include img-center
           z-index: -1
       .blog-text
         background-color: #fafafa
@@ -624,7 +616,7 @@ body
         & > a
           text-decoration: none
           font-size: 14px
-          color: #30a3f0
+          color: $blue-text
           & span
             margin-right: 10px
           & i
@@ -680,7 +672,7 @@ body
     cursor: pointer
     &:hover
       background-color: #707070
-      color: #30a3f0
+      color: $blue-text
     &:focus
       outline: none
   &-bg
@@ -710,4 +702,5 @@ body
         text-decoration: none
         color: rgba(255, 255, 255, 0.3)
         &:hover
-          color: #30a3f0
+          color: $blue-text
+
