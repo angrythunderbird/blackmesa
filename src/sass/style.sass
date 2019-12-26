@@ -4,8 +4,8 @@ $blue-text: #30a3f0
   position: absolute
   top: 50%
   left: 50%
-  object-fit: cover
   transform: translate(-50%, -50%)
+  object-fit: cover 
 
 body
   font-family: 'Lato', sans-serif
@@ -405,7 +405,6 @@ body
   max-height: 1000px
   padding-top: 100px
   padding-bottom: 104px
-  background-color: #fff
   &-photo
     margin-top: 58px
     display: flex
@@ -413,27 +412,17 @@ body
     align-items: flex-start
     &-item
       flex-basis: 31%
-      &-member
+      .team-photo-item-member
         position: relative
         width: 370px
         height: 370px
         margin-bottom: 40px
-        .blank
-          width: 370px
-          height: 370px
-          position: absolute
-          top: 0
-          left: 0
-          background-color: rgba(255, 255, 255, 0.5)
-          overflow: hidden
-          z-index: 2
+        background-color: rgba(255, 255, 255, 0.5)
+        overflow: hidden
+        
         .face
-          position: absolute
-          top: 50%
-          left: 50%
-          transform: translate(-50%, -50%)
-          object-fit: cover
-          z-index: 1
+          @include img-center
+          z-index: -1
       &-position
         margin: 0
         margin-bottom: 14px
@@ -469,13 +458,14 @@ body
         a:hover
           color: #ffffff
           background-image: url(../images/rhombus_blue_min.png)
-    &-item:hover .blank
-      z-index: 0
+    &-item:hover .team-photo-item-member
+      z-index: 2
 
 .mockup
   padding-bottom: 0
   .screens
     margin-top: 58px
+    width: 100%
 
 .stat
   min-height: 400px

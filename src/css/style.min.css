@@ -130,7 +130,7 @@ body { font-family: 'Lato', sans-serif; font-weight: 400; font-size: 16px; backg
 
 .photo-btn a:hover { background-color: #ffffff; color: #30a3f0; }
 
-.photo-item img { width: 100%; height: 350px; position: absolute; top: 50%; left: 50%; -o-object-fit: cover; object-fit: cover; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); z-index: -1; }
+.photo-item img { width: 100%; height: 350px; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); -o-object-fit: cover; object-fit: cover; z-index: -1; }
 
 .photo-text { display: none; position: absolute; width: 100%; text-align: center; top: calc( 50% - 30px); }
 
@@ -162,17 +162,15 @@ body { font-family: 'Lato', sans-serif; font-weight: 400; font-size: 16px; backg
 
 .tour-bg .center > p { margin-bottom: 50px; }
 
-.team { max-height: 1000px; padding-top: 100px; padding-bottom: 104px; background-color: #fff; }
+.team { max-height: 1000px; padding-top: 100px; padding-bottom: 104px; }
 
 .team-photo { margin-top: 58px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; }
 
 .team-photo-item { -ms-flex-preferred-size: 31%; flex-basis: 31%; }
 
-.team-photo-item-member { position: relative; width: 370px; height: 370px; margin-bottom: 40px; }
+.team-photo-item .team-photo-item-member { position: relative; width: 370px; height: 370px; margin-bottom: 40px; background-color: rgba(255, 255, 255, 0.5); overflow: hidden; }
 
-.team-photo-item-member .blank { width: 370px; height: 370px; position: absolute; top: 0; left: 0; background-color: rgba(255, 255, 255, 0.5); overflow: hidden; z-index: 2; }
-
-.team-photo-item-member .face { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); -o-object-fit: cover; object-fit: cover; z-index: 1; }
+.team-photo-item .team-photo-item-member .face { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); -o-object-fit: cover; object-fit: cover; z-index: -1; }
 
 .team-photo-item-position { margin: 0; margin-bottom: 14px; font-size: 14px; color: #30a3f0; }
 
@@ -186,11 +184,11 @@ body { font-family: 'Lato', sans-serif; font-weight: 400; font-size: 16px; backg
 
 .team-photo-item-social a:hover { color: #ffffff; background-image: url(../images/rhombus_blue_min.png); }
 
-.team-photo-item:hover .blank { z-index: 0; }
+.team-photo-item:hover .team-photo-item-member { z-index: 2; }
 
 .mockup { padding-bottom: 0; }
 
-.mockup .screens { margin-top: 58px; }
+.mockup .screens { margin-top: 58px; width: 100%; }
 
 .stat { min-height: 400px; background-color: #111111; color: #ffffff; }
 
@@ -230,7 +228,7 @@ body { font-family: 'Lato', sans-serif; font-weight: 400; font-size: 16px; backg
 
 .blog-grid-item .blog-thumb .blog-share .blog-btn-like { color: #30a3f0; font-size: 14px; font-weight: 700; text-decoration: none; padding: 8px 11px 8px; background-color: #ffffff; border: 1px solid #ffffff; border-radius: 5px; cursor: pointer; }
 
-.blog-grid-item .blog-thumb img { width: 285px; height: 100%; position: absolute; top: 50%; left: 50%; -o-object-fit: cover; object-fit: cover; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); z-index: -1; }
+.blog-grid-item .blog-thumb img { width: 285px; height: 100%; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); -o-object-fit: cover; object-fit: cover; z-index: -1; }
 
 .blog-grid-item .blog-text { background-color: #fafafa; padding: 46px 38px 50px; margin: 0; -ms-flex-preferred-size: 209px; flex-basis: 209px; }
 

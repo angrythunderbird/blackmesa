@@ -1,3 +1,11 @@
+@media (max-width: 1380px) {
+  .mockup-img {
+    width: 500px;
+    height: 447px;
+    right: 30px;
+  }
+}
+
 @media (max-width: 1300px) {
   .wrapper {
     max-width: 900px;
@@ -16,4 +24,13 @@
   .nav .nav-item-btn:last-child {
     margin-right: 0;
   }
+  .box-item {
+    padding: 60px 52px;
+  }
+  .mockup-img {
+    width: 388px;
+    height: 346px;
+    right: 15px;
+  }
 }
+
